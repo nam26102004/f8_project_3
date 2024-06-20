@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+:root{
+    --footer-font: "Open Sans", sans-serif;
+    --primary-color: #2E80CE;
+    --title-color:#10375C;
+    --desc-color: #575F66;
+}
+a{
+    text-decoration: none;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-1{
+    --line-clamp: 1;
+}
+
+.line-2{
+    --line-clamp: 2;
+}
+
+.line-3{
+    --line-clamp: 3;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 205px;
+    padding: 0 40px;
+    line-height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
